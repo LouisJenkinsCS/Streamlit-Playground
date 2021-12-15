@@ -12,7 +12,7 @@ datadir = os.getcwd() + '/Arkouda-Benchmark-Data'
 
 # Iterate over all files in the current directory
 for filename in os.listdir(datadir):
-    if not filename.endswith('32.out') or (filename.find('IO') == -1 and filename.find('lanl') == -1):
+    if not filename.endswith('32.out'): # or (filename.find('IO') == -1 and filename.find('lanl') == -1):
         continue
     # print(f"==========================={filename}================================")
     timelineData[filename] = {}
